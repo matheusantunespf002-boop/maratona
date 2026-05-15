@@ -1,4 +1,4 @@
-function solucao() {
+function novasolucao() {
     const campo = document.getElementById("campo").value;
     const vetor = campo.split(", ");
     let novoVetor = [];
@@ -16,20 +16,3 @@ function solucao() {
     }
     document.getElementById("saida").innerHTML = novoVetor.join(", ");
 }
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Questão 6</title>
-</head>
-<body>
-    <h1>Questão 6</h1>
-
-    <input type="text" id="campo" placeholder="Digite aqui...">
-    <button onclick="solucao()">Corrigir</button>
-
-    <div id="saida"></div>
-    <script src="../questao6/q6_julialouie.js"></script>
-</body>
-</html>
