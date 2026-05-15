@@ -4,13 +4,13 @@ function solucao() {
     // transforma o texto em vetor
     let vetor = campo.split(",");
 
-    let invertido = [];
+    let saida = [];
 
     // percorre de trás para frente
     for (let i = vetor.length - 1; i >= 0; i--) {
-        invertido.push(vetor[i]);
+        saida.push(vetor[i]);
     }
 
     document.getElementById("saida").innerHTML =
-        "[" + invertido.join(", ") + "]";
+        "[" + saida.join(", ") + "]";
 }
